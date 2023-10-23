@@ -1,0 +1,202 @@
+[
+    {
+    	"title" : "Desert",
+    	"lType" : "obstacle",
+    	"cost": {
+    		"speed" : 3,
+    		"gold" : null
+    	},
+    	"icons"  : ["sun","sun","sun","sun","sun"],
+    	"bkgImg" : "desert",
+    	"resourceStat" : [
+    		{"name": "water", "wType": "C", "wPos": 6, "blockSize":null}, 
+    		{"name": "stone", "wType": "A", "wPos": 5, "blockSize":null}, 
+    		{"name": "food",  "wType": "C", "wPos": 2, "blockSize":null} 
+    	],
+    	"maxBlock" : 1,
+    	"neighbour": {
+    		"obstacle": 2,
+    		"producer": 3,
+    		"market": 1 
+    	}
+    },    
+    {
+    	"title" : "Fisherman Village",
+    	"lType" : "market",
+    	"cost": {
+    		"speed" : 1,
+    		"gold" : 2
+    	},
+    	"icons"  : ["city","warm"],
+    	"bkgImg" : "seavillage",
+    	"resourceStat" : [
+    		{"name": "food", "wType": "A", "wPos": 0, "blockSize":null}, 
+    		{"name": "wood",  "wType": "D", "wPos": 6, "blockSize":null},
+    		{"name": "spice",  "wType": "C", "wPos": 5, "blockSize":null},
+    		{"name": "silk",  "wType": "C", "wPos": 3, "blockSize":null}
+    	],
+    	"maxBlock" : 3,
+    	"neighbour": {
+    		"obstacle": 3,
+    		"producer": 3,
+    		"market": 1
+    	}
+    },
+    {
+    	"title" : "River Village",
+    	"lType" : "market",
+    	"cost": {
+    		"speed" : 1,
+    		"gold" : 2
+    	},
+    	"icons"  : ["city","wild"],
+    	"bkgImg" : "rivervillage",
+    	"resourceStat" : [
+    		{"name": "water", "wType": "A", "wPos": 0, "blockSize":null}, 
+    		{"name": "food", "wType": "0", "wPos": 1, "blockSize":null}, 
+    		{"name": "wood",  "wType": "B", "wPos": 2, "blockSize":null},
+    		{"name": "stone",  "wType": "D", "wPos": 6, "blockSize":null},
+    		{"name": "spice",  "wType": "D", "wPos": 5, "blockSize":null}
+    	],
+    	"maxBlock" : 3,
+    	"neighbour": {
+    		"obstacle": 2,
+    		"producer": 3,
+    		"market": 1
+    	}
+    },
+    {
+    	"title" : "Hunting ground",
+    	"lType" : "obstacle",
+    	"cost": {
+    		"speed" : 2,
+    		"gold" : null
+    	},
+    	"icons"  : ["wild","mountain"],
+    	"bkgImg" : "huntingground",
+    	"resourceStat" : [
+    		{"name": "food", "wType": "A", "wPos": 0, "blockSize":2}, 
+    		{"name": "food", "wType": "B", "wPos": 0, "blockSize":1}, 
+    		{"name": "wood",  "wType": "A", "wPos": 0, "blockSize":null},
+    		{"name": "stone",  "wType": "B", "wPos": 6, "blockSize":null},
+    		{"name": "spice",  "wType": "C", "wPos": 6, "blockSize":null}
+    	],
+    	"maxBlock" : 1,
+    	"neighbour": {
+    		"obstacle": 1,
+    		"producer": 2,
+    		"market": 2
+    	}
+    },
+    {
+    	"title" : "Farmers Village",
+    	"lType" : "producer",
+    	"cost": {
+    		"speed" : 1,
+    		"gold" : 2
+    	},
+    	"icons"  : ["city"],
+    	"bkgImg" : "countryside",
+    	"resourceStat" : [
+    		{"name": "food", "wType": "A", "wPos": 0, "blockSize":null}, 
+    		{"name": "water",  "wType": "A", "wPos": 3, "blockSize":null},
+    		{"name": "stone",  "wType": "B", "wPos": 6, "blockSize":null},
+    		{"name": "spice",  "wType": "B", "wPos": 6, "blockSize":null},
+    		{"name": "silk",  "wType": "B", "wPos": 4, "blockSize": 5}
+    	],
+    	"maxBlock" : 1,
+    	"neighbour": {
+    		"obstacle": 1,
+    		"producer": 2,
+    		"market": 2
+    	}
+    },
+    {
+    	"title" : "silkworm farmers",
+    	"lType" : "producer",
+    	"cost": {
+    		"speed" : 1,
+    		"gold" : 5
+    	},
+    	"icons"  : ["city"],
+    	"bkgImg" : "silkfarmer",
+    	"resourceStat" : [
+    		{"name": "food", "wType": "C", "wPos": 4, "blockSize":null}, 
+    		{"name": "water",  "wType": "C", "wPos": 3, "blockSize":null},
+    		{"name": "silk",  "wType": "A", "wPos": 4, "blockSize": 2}
+    	],
+    	"maxBlock" : 1,
+    	"neighbour": {
+    		"obstacle": 1,
+    		"producer": 2,
+    		"market": 2
+    	}
+    },
+    {
+        "title" : "The Great City",
+        "lType" : "market",
+        "cost": {
+            "speed" : 1,
+            "gold" : 5
+        },
+        "icons"  : ["city", "city", "city"],
+        "bkgImg" : "greatcity",
+        "resourceStat" : [
+            {"name": "food",  "wType": "C", "wPos": 3, "blockSize":null},
+            {"name": "wood",  "wType": "D", "wPos": 6, "blockSize":null},
+            {"name": "stone",  "wType": "D", "wPos": 6, "blockSize":null},
+            {"name": "spice",  "wType": "E", "wPos": 6, "blockSize":null},
+            {"name": "silk",  "wType": "F", "wPos": 6, "blockSize":null}
+        ],
+        "maxBlock" : 6,
+        "neighbour": {
+            "obstacle": 3,
+            "producer": 0,
+            "market": 1
+        }
+    },
+    {
+        "title" : "The Tailors",
+        "lType" : "market",
+        "cost": {
+            "speed" : 1,
+            "gold" : null
+        },
+        "icons"  : ["wild", "mountain"],
+        "bkgImg" : "tailors",
+        "resourceStat" : [
+            {"name": "food",  "wType": "0", "wPos": 3, "blockSize":null},
+            {"name": "wood",  "wType": "0", "wPos": 3, "blockSize":null},
+            {"name": "stone",  "wType": "B", "wPos": 6, "blockSize":null},
+            {"name": "silk",  "wType": "E", "wPos": 6, "blockSize":null}
+        ],
+        "maxBlock" : 4,
+        "neighbour": {
+            "obstacle": 2,
+            "producer": 1,
+            "market": 1
+        }
+    },
+    {
+        "title" : "The Butcher",
+        "lType" : "market",
+        "cost": {
+            "speed" : 1,
+            "gold" : null
+        },
+        "icons"  : ["mountain"],
+        "bkgImg" : "spice",
+        "resourceStat" : [
+            {"name": "food",  "wType": "C", "wPos": 1},
+            {"name": "wood",  "wType": "C", "wPos": 4, "blockSize":null},
+            {"name": "spice",  "wType": "D", "wPos": 6, "blockSize":null}
+        ],
+        "maxBlock" : 4,
+        "neighbour": {
+            "obstacle": 3,
+            "producer": 1,
+            "market": 0
+        }
+    }
+
+]
