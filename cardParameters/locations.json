@@ -3,13 +3,12 @@
     	"title" : "Desert",
     	"lType" : "obstacle",
     	"cost": {
-    		"speed" : 3,
-    		"gold" : null
+    		"speed" : 3
     	},
-    	"icons"  : ["sun","sun","sun","sun","sun"],
+    	"icons"  : ["s-s","s-s","s"],
     	"bkgImg" : "desert",
     	"resourceStat" : [
-    		{"name": "water", "wType": "C", "wPos": 6, "blockSize":null}, 
+    		{"name": "water", "wType": "C"}, 
     		{"name": "stone", "wType": "A", "wPos": 5, "blockSize":null}, 
     		{"name": "food",  "wType": "C", "wPos": 2, "blockSize":null} 
     	],
@@ -27,7 +26,7 @@
     		"speed" : 1,
     		"gold" : 2
     	},
-    	"icons"  : ["city","warm"],
+    	"icons"  : ["c-s"],
     	"bkgImg" : "seavillage",
     	"resourceStat" : [
     		{"name": "food", "wType": "A", "wPos": 0, "blockSize":null}, 
@@ -49,10 +48,10 @@
     		"speed" : 1,
     		"gold" : 2
     	},
-    	"icons"  : ["city","wild"],
+    	"icons"  : ["c-w"],
     	"bkgImg" : "rivervillage",
     	"resourceStat" : [
-    		{"name": "water", "wType": "A", "wPos": 0, "blockSize":null}, 
+    		{"name": "water", "wType": "A"}, 
     		{"name": "food", "wType": "0", "wPos": 1, "blockSize":null}, 
     		{"name": "wood",  "wType": "B", "wPos": 2, "blockSize":null},
     		{"name": "stone",  "wType": "D", "wPos": 6, "blockSize":null},
@@ -69,14 +68,12 @@
     	"title" : "Hunting ground",
     	"lType" : "obstacle",
     	"cost": {
-    		"speed" : 2,
-    		"gold" : null
+    		"speed" : 2
     	},
-    	"icons"  : ["wild","mountain"],
+    	"icons"  : ["w","w-m"],
     	"bkgImg" : "huntingground",
     	"resourceStat" : [
-    		{"name": "food", "wType": "A", "wPos": 0, "blockSize":2}, 
-    		{"name": "food", "wType": "B", "wPos": 0, "blockSize":1}, 
+    		{"name": "food", "wType": "A"}, 
     		{"name": "wood",  "wType": "A", "wPos": 0, "blockSize":null},
     		{"name": "stone",  "wType": "B", "wPos": 6, "blockSize":null},
     		{"name": "spice",  "wType": "C", "wPos": 6, "blockSize":null}
@@ -89,6 +86,49 @@
     	}
     },
     {
+    	"title" : "The Quarry",
+    	"lType" : "producer",
+    	"cost": {
+    		"speed" : 1
+    	},
+    	"icons"  : ["m"],
+    	"bkgImg" : "quarry",
+    	"resourceStat" : [
+    		{"name": "food", "wType": "B"}, 
+    		{"name": "water",  "wType": "B"},
+    		{"name": "stone",  "wType": "A", "wPos": 0, "blockSize":null},
+    		{"name": "wood",  "wType": "D", "wPos": 6, "blockSize":null}
+    	],
+    	"maxBlock" : 4,
+    	"neighbour": {
+    		"obstacle": 2,
+    		"producer": 0,
+    		"market": 0
+    	}
+    },
+    {
+    	"title" : "Saltwork",
+    	"lType" : "producer",
+    	"cost": {
+    		"speed" : 1
+    	},
+    	"icons"  : ["m-s"],
+    	"bkgImg" : "quarry",
+    	"resourceStat" : [
+    		{"name": "food", "wType": "B"}, 
+    		{"name": "water",  "wType": "B"},
+    		{"name": "wood",  "wType": "D", "wPos": 6, "blockSize":null},
+			{"name": "spice",  "wType": "A", "wPos": 0, "blockSize":null},
+			{"name": "stone",  "wType": "C", "wPos": 5, "blockSize":null}
+    	],
+    	"maxBlock" : 4,
+    	"neighbour": {
+    		"obstacle": 3,
+    		"producer": 0,
+    		"market": 0
+    	}
+    },
+    {
     	"title" : "Farmers Village",
     	"lType" : "producer",
     	"cost": {
@@ -98,7 +138,7 @@
     	"icons"  : ["city"],
     	"bkgImg" : "countryside",
     	"resourceStat" : [
-    		{"name": "food", "wType": "A", "wPos": 0, "blockSize":null}, 
+    		{"name": "food", "wType": "A"}, 
     		{"name": "water",  "wType": "A", "wPos": 3, "blockSize":null},
     		{"name": "stone",  "wType": "B", "wPos": 6, "blockSize":null},
     		{"name": "spice",  "wType": "B", "wPos": 6, "blockSize":null},
@@ -106,9 +146,9 @@
     	],
     	"maxBlock" : 1,
     	"neighbour": {
-    		"obstacle": 1,
-    		"producer": 2,
-    		"market": 2
+    		"obstacle": 2,
+    		"producer": 1,
+    		"market": 0
     	}
     },
     {
@@ -121,7 +161,7 @@
     	"icons"  : ["city"],
     	"bkgImg" : "silkfarmer",
     	"resourceStat" : [
-    		{"name": "food", "wType": "C", "wPos": 4, "blockSize":null}, 
+    		{"name": "food", "wType": "C"}, 
     		{"name": "water",  "wType": "C", "wPos": 3, "blockSize":null},
     		{"name": "silk",  "wType": "A", "wPos": 4, "blockSize": 2}
     	],
@@ -139,10 +179,10 @@
             "speed" : 1,
             "gold" : 5
         },
-        "icons"  : ["city", "city", "city"],
+        "icons"  : ["c-c", "city"],
         "bkgImg" : "greatcity",
         "resourceStat" : [
-            {"name": "food",  "wType": "C", "wPos": 3, "blockSize":null},
+            {"name": "food",  "wType": "C"},
             {"name": "wood",  "wType": "D", "wPos": 6, "blockSize":null},
             {"name": "stone",  "wType": "D", "wPos": 6, "blockSize":null},
             {"name": "spice",  "wType": "E", "wPos": 6, "blockSize":null},
@@ -159,13 +199,12 @@
         "title" : "The Tailors",
         "lType" : "market",
         "cost": {
-            "speed" : 1,
-            "gold" : null
+            "speed" : 1
         },
-        "icons"  : ["wild", "mountain"],
+        "icons"  : ["w-m"],
         "bkgImg" : "tailors",
         "resourceStat" : [
-            {"name": "food",  "wType": "0", "wPos": 3, "blockSize":null},
+            {"name": "food",  "wType": "B", "wPos": 3, "blockSize":null},
             {"name": "wood",  "wType": "0", "wPos": 3, "blockSize":null},
             {"name": "stone",  "wType": "B", "wPos": 6, "blockSize":null},
             {"name": "silk",  "wType": "E", "wPos": 6, "blockSize":null}
@@ -181,13 +220,12 @@
         "title" : "The Butcher",
         "lType" : "market",
         "cost": {
-            "speed" : 1,
-            "gold" : null
+            "speed" : 1
         },
         "icons"  : ["mountain"],
         "bkgImg" : "spice",
         "resourceStat" : [
-            {"name": "food",  "wType": "C", "wPos": 1},
+            {"name": "food",  "wType": "B"},
             {"name": "wood",  "wType": "C", "wPos": 4, "blockSize":null},
             {"name": "spice",  "wType": "D", "wPos": 6, "blockSize":null}
         ],
@@ -197,6 +235,67 @@
             "producer": 1,
             "market": 0
         }
-    }
-
+    },
+    {
+        "title" : "Dangerous Path",
+        "lType" : "obstacle",
+        "cost": {
+            "speed" : 2
+        },
+        "icons"  : ["m-w", "m-w", "c"],
+        "bkgImg" : "dangerousPath",
+        "resourceStat" : [
+            {"name": "food",  "wType": "B"},
+            {"name": "wood",  "wType": "B", "wPos": 3, "blockSize":null},
+            {"name": "stone",  "wType": "D", "wPos": 5, "blockSize":null}
+        ],
+        "maxBlock" : 1,
+        "neighbour": {
+            "obstacle": 0,
+            "producer": 1,
+            "market": 1
+        }
+    },
+    {
+        "title" : "Forest Path",
+        "lType" : "obstacle",
+        "cost": {
+            "speed" : 2
+        },
+        "icons"  : ["w-w", "w", "w"],
+        "bkgImg" : "forestPath",
+        "resourceStat" : [
+            {"name": "food",  "wType": "C"},
+            {"name": "wood",  "wType": "B", "wPos": 0},
+			{"name": "silk",  "wType": "C", "wPos": 6},
+            {"name": "water",  "wType": "0", "wPos": 4}
+        ],
+        "maxBlock" : 2,
+        "neighbour": {
+            "obstacle": 0,
+            "producer": 1,
+            "market": 1
+        }
+    },
+    {
+        "title" : "Swamp Cross",
+        "lType" : "obstacle",
+        "cost": {
+            "speed" : 2
+        },
+        "icons"  : ["c-w", "s-c"],
+        "bkgImg" : "swampCross",
+        "resourceStat" : [
+            {"name": "food",  "wType": "C"},
+            {"name": "wood",  "wType": "D", "wPos": 6},
+			{"name": "stone",  "wType": "C", "wPos": 6},
+            {"name": "water",  "wType": "B"}
+        ],
+        "maxBlock" : 1,
+        "neighbour": {
+            "obstacle": 0,
+            "producer": 1,
+            "market": 1
+        }
+	}
 ]
